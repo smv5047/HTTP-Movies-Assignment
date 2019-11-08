@@ -13,7 +13,10 @@ function UpdateMovie (props) {
     const handleChange = (event) =>{
         setMovie({
             ...movie,
-            [event.target.name]: event.target.value
+            id: props.match.params.id,
+            [event.target.name]: event.target.value,
+            
+            
         })
     }
 
